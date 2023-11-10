@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facharbeitsmesse 2023</title>
+    <link rel="shortcut icon" href="../images/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preload" as="image" type="image/webp" href="../images/banner_logo.webp">
+    <link rel="preload" as="image" type="image/webp" href="../images/CGH-Header-2022.webp" name="used-in-css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+		<section class="header">
+			<nav class="navigation-bar">
+				<a id="favicon-link-home" href="../"><img src="../images/banner_logo.webp" alt="favicon" width="314px" height="84px"></a>
+				<label class="burger_button" for="burger_toggle">
+					<input id="burger_toggle" type="checkbox" />
+				</label>
+				<aside class="sidebar">
+                <ul class="nav-links-ul">
+                    <li class="inactive-page"><a class="nav-item" href="../">Startseite</a></li>
+                    <li class="inactive-page"><a class="nav-item" href="../messeplan/">Messeplan</a></li>
+                    <li class="inactive-page"><a class="nav-item" href="../projekte/">Projekte</a></li>
+                    <li class="active-page"><a class="nav-item" href="../teams/">Orga-Teams</a></li>
+                    <li class="inactive-page"><a class="nav-item" href="../fotogalerie/">Fotogalerie</a></li>
+				</ul>
+			</aside>
+			</nav>
+		</section>
+        <section class="content">
+            <form>
+                <div id="settings">
+                    <div id="color-select">
+                        <div>
+                            <input type="color" name="bg-color" id="bgcolor">
+                            <label for="bgcolor">Hintergrund</label>
+                        </div>
+        
+                        <div>
+                            <input type="color" name="main-color" id="maincolor">
+                            <label for="maincolor">Main-Farbe</label>
+                        </div>
+                        
+                        <div>
+                            <input type="color" name="secondary-color" id="secondarycolor">
+                            <label for="secondarycolor">Sekundär-Farbe</label>
+                        </div>
+                        
+                        <div>
+                            <input type="color" name="accent-color" id="accentcolor">
+                            <label for="accentcolor">Akzentfarbe</label>
+                        </div>
+
+                        <div>
+                            <input type="color" name="text-color" id="textcolor">
+                            <label for="textcolor">Textfarbe</label>
+                        </div>
+    
+                        <div>
+                            <button type="reset" value="Reset" id="resetcolor" onclick="resetColors()">Reset</button>
+                        </div>
+
+                    </div>
+                    <div id="setting-rest">
+                        <div>
+                            <input type="number" name="border-radius" id="borderradius" value="7">
+                            <label for="borderradius">px Rand-Radius</label>
+                        </div>
+                        <div>
+                            <input type="number" name="text-size" id="textsize" value="16">
+                            <label for="textsize">px Schriftgröße</label>
+                        </div>
+                        <div>
+                            <button type="reset" value="Reset" id="resetrest" onclick="resetRest()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+            <script src="../js/swap_colors.js"></script>
+            
+            <div class="main-content">
+                <div class="info-text">
+                    <h1>Unsere Organistions und Öffentlichkeitsteams!</h1>
+                    <p>Hier folgen noch mehr Infos zu den beiden Teams.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="footer">
+            <p id="contact">Mail-Kontakt: <a href="mailto:pressegruppe@gyher.de">pressegruppe@gyher.de</a> <a href="../contact/">Impressum</a></p>
+            <p id="written-by">Written by Timo</p>
+        </section>
+    </div>
+</body>
+</html>
+

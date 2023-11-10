@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facharbeitsmesse 2023</title>
+    <link rel="shortcut icon" href="../images/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preload" as="image" type="image/webp" href="../images/banner_logo.webp">
+    <link rel="preload" as="image" type="image/webp" href="../images/CGH-Header-2022.webp" name="used-in-css">
+    <link rel="preload" as="image" type="image/webp" href="../images/Gruppenfotos/small/Janna Kadur (n.a.), Merle Steffens, Tim Maiß, Shanade Norris.webp">
+    <link rel="preload" as="image" type="image/webp" href="../images/Gruppenfotos/small/Emely Bartels, Charlotte Wittenburg,  Erika Sachse.webp">
+    <link rel="preload" as="image" type="image/webp" href="../images/Gruppenfotos/small/Hans Otto Euhus, Lars Hendrik Reiser, Jan-Mattes Berthold, Moritz Michaelis.webp">
+</head>
+
+<body>
+    <div class="grid-container">
+		<section class="header">
+			<nav class="navigation-bar">
+				<a id="favicon-link-home" href="../"><img src="../images/banner_logo.webp" alt="favicon" width="314px" height="84px"></a>
+				<label class="burger_button" for="burger_toggle">
+					<input id="burger_toggle" type="checkbox" />
+				</label>
+				<aside class="sidebar">
+                <ul class="nav-links-ul">
+                    <li class="inactive-page"><a class="nav-item" href="../">Startseite</a></li>
+                    <li class="inactive-page"><a class="nav-item" href="../messeplan/">Messeplan</a></li>
+                    <li class="active-page"><a class="nav-item" href="../projekte/">Projekte</a></li>
+                    <li class="inactive-page"><a class="nav-item" href="../teams/">Orga-Teams</a></li>
+                    <li class="inactive-page"><a class="nav-item" href="../fotogalerie/">Fotogalerie</a></li>
+				</ul>
+			</aside>
+			</nav>
+		</section>
+
+        <section class="content">
+            <form>
+                <div id="settings">
+                    <div id="color-select">
+                        <div>
+                            <input type="color" name="bg-color" id="bgcolor">
+                            <label for="bgcolor">Hintergrund</label>
+                        </div>
+        
+                        <div>
+                            <input type="color" name="main-color" id="maincolor">
+                            <label for="maincolor">Main-Farbe</label>
+                        </div>
+                        
+                        <div>
+                            <input type="color" name="secondary-color" id="secondarycolor">
+                            <label for="secondarycolor">Sekundär-Farbe</label>
+                        </div>
+                        
+                        <div>
+                            <input type="color" name="accent-color" id="accentcolor">
+                            <label for="accentcolor">Akzentfarbe</label>
+                        </div>
+
+                        <div>
+                            <input type="color" name="text-color" id="textcolor">
+                            <label for="textcolor">Textfarbe</label>
+                        </div>
+    
+                        <div>
+                            <button type="reset" value="Reset" id="resetcolor" onclick="resetColors()">Reset</button>
+                        </div>
+
+                    </div>
+                    <div id="setting-rest">
+                        <div>
+                            <input type="number" name="border-radius" id="borderradius" value="7">
+                            <label for="borderradius">px Rand-Radius</label>
+                        </div>
+                        <div>
+                            <input type="number" name="text-size" id="textsize" value="16">
+                            <label for="textsize">px Schriftgröße</label>
+                        </div>
+                        <div>
+                            <button type="reset" value="Reset" id="resetrest" onclick="resetRest()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+            <script src="../js/swap_colors.js"></script>
+
+            <span id="content-description-projects">
+                <h1>Unsere Projekte</h1>
+            </span>
+            
+            <div class="grid-projekte">
+
+                <div id="project1" class="tr">                    
+                    <img src="../images/Gruppenfotos/small/Janna Kadur (n.a.), Merle Steffens, Tim Maiß, Shanade Norris.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Auswirkungen des Afghanistan-Krieges auf die Psyche von Kindern und Jugendlichen</h2>
+                        <p>Die Konflikte in Afghanistan dauern bereits seit mehreren Jahrzehnten an, doch wie ist es in solch einem Staat aufzuwachsen und welchen Einfluss hat dies auf die heranwachsende Generation?</p>
+                        <p class="authors">Janna Kadur (n.a.), Merle Steffens, Tim Maiß, Shanade Norris</p>
+                    </span>
+                </div>
+
+                <div id="project2" class="tl">
+                    <img src="../images/Gruppenfotos/small/Emely Bartels, Charlotte Wittenburg,  Erika Sachse.webp"  width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Schlafen kann ich, wenn ich tot bin!</h2>
+                        <p>Wenn man dem lange genug folge leistet, könnte der Tod tatsächlich bald vorbeikommen. Die vielseitigen Auswirkungen von Schlafmangel äußern sich jedoch nicht immer in Extremen — manchmal ist es nur erschöpfende Müdigkeit, Vergesslichkeit, Schwäche oder das kurze Einnicken am Schreibtisch — die Leistungsfähigkeit leidet jedoch immer.</p>
+                        <p class="authors">Emely Bartels, Charlotte Wittenburg,  Erika Sachse</p>
+                    </span>
+                </div>
+
+                <div id="project3" class="tr">
+                    <img src="../images/Gruppenfotos/small/Hans Otto Euhus, Lars Hendrik Reiser, Jan-Mattes Berthold, Moritz Michaelis.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Ist die Luftfahrt noch zu retten?</h2>
+                        <p>In dieser Facharbeit wird sich mit der Frage beschäftigt, inwieweit erneuerbare Energieträger fossile Brenstoffe in der Luftfahrt ablösen können. Besonderes Augenmerk liegt hierbei auf Batterien und der Brenstoffzelle als Energieträger, da diese schon in Kraftfahrzeugen zum Einsatz kommen.  </p>
+                        <p class="authors">Lars Hendrik Reiser, Moritz Michaelis, Jan-Mattes Berthold, Hans Otto Euhus</p>
+                    </span>
+                </div>
+
+                <div id="project4" class="tl">
+                    <img src="../images/bild1.webp"width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Einfluss der sozialen Herkunft auf Bildungschancen</h2>
+                        <p>Diese Facharbeit beschäftigt sich mit dem Einfluss der Herkunft auf Bildungschancen von Kindern, und die soziale Ungleichheit unter der viele junge Menschen leiden. Es wird vor allem thematisiert, wieso sich das soziale Milieu der Eltern derart auf den Bildungsweg ihrer Kinder auswirkt.</p>
+                        <p class="authors">Theresa Otte, Luisa Grethen, Elea Spallek (n.a.)</p>
+                    </span>
+                </div>
+
+                <div id="project5" class="tr">
+                    <img src="../images/Gruppenfotos/small/Simon Gerwien, Eike-Benedikt Borges, Friedrich Dyckerhoff,  Collin Jopp.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Uiguren - Ein bedrohtes Volk?</h2>
+                        <p>Die Uiguren sind ein turksprachiges Volk, welche in Zentralasien beheimatet sind. Diese Facharbeit untersucht die Kultur und Geschichte der Uiguren und beleuchtet gleichzeitig die aktuellen Herausforderungen mit denen sie konfrontiert sind.</p>
+                        <p class="authors">Simon Gerwien, Eike-Benedikt Borges, Friedrich Dyckerhoff,  Collin Jopp</p>
+                    </span>
+                </div>
+
+                <div id="project6" class="tl">
+                    <img src="../images/Gruppenfotos/small/Paula Thiel, Allisa-Marie Kuchar, Ann-Kristin Koepfinger.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Feminismus - Entwicklung und Status quo in Deutschland</h2>
+                        <p>"Frauen sind heutzutage gleichberechtigt!" - inwiefern diese Aussage der Wahrheit entspricht, wird in unserer Facharbeit beleuchtet. Es geht um den Feminismus in sowohl politischer, als auch gesellschaftlicher Perspektive. </p>
+                        <p class="authors">Paula Thiel, Allisa-Marie Kuchar, Ann-Kristin Koepfinger</p>
+                    </span>
+                </div>
+
+                <div id="project7" class="tr">
+                    <img src="../images/Gruppenfotos/small/Michelle Hagemeier, Hanna Rieger, Vivien Hagemeier.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Das Gefahrenpotential eines Amoklaufes - ein Vergleich zwischen Deutschland und den USA </h2>
+                        <p>Wir haben uns die Frage gestellt wie sicher wir in Deutschland vor einem Amoklauf sind. Um dies zu untersuchen haben wir Amerika als Vergleich herangezogen und Themen, wie die Häufigkeit, Wahrscheinlichkeit und Präventionsmaßnahmen berücksichtigt. </p>
+                        <p class="authors">Michelle Hagemeier, Hanna Rieger, Vivien Hagemeier</p>
+                    </span>
+                </div>
+                
+                <div id="project8" class="tl">
+                    <img src="../images/Gruppenfotos/small/Charlotte Rönicke, Dorothea Lange, Pauline Pohl.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Das ABC der Massenvernichtung</h2>
+                        <p>In der heutigen Zeit scheinen die Konflikte und kriegerischen Auseinandersetzungen zwischen Ländern nicht nur zuzunehmen, sondern auch immer näher zu rücken. Für mache schon Normalität, für andere die Ursache von Angst und Unsicherheit: Wann trifft es uns? Welche Geschütze werden noch aufgefahren? Mit dem Infostand der Facharbeitsmesse wollen wir die Besucher für die Andersartigkeit der atomaren, biologischen und chemischen Kriegsführung sensibilisieren und sie dazu auffordern, sich eine Meinung zu einem möglichen Gebrauch dieser Waffenarten im jetzigen Jahrhundert zu bilden.</p>
+                        <p class="authors">Charlotte Rönicke, Dorothea Lange, Pauline Pohl</p>
+                    </span>
+                </div>
+
+                <div id="project9" class="tr">
+                    <img src="../images/Gruppenfotos/small/Lena Trünnelberg, Nele Hohls, Rieke Wienecke, Darius Gruel (n.a.).webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Stockholm-Syndrom</h2>
+                        <p>Das Stockholm-Syndrom bezieht sich auf eine psychologische Reaktion, bei der Opfer von Entführungen oder Geiselnahmen Sympathie und positive Gefühle für ihre Entführer/-innen entwickeln können. In Bezug auf Natascha Kampusch, die acht Jahre lang in Gefangenschaft gehalten wurde, wurde das Stockholm-Syndrom als möglicher Faktor in ihrer Bindung an ihren Entführer diskutiert.</p>
+                        <p class="authors">Lena Trünnelberg, Nele Hohls, Rieke Wienecke, Darius Gruel (n.a.)</p>
+                    </span>
+                </div>
+
+                <div id="project10" class="tl">
+                    <img src="../images/bild1.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Ehrenmord - Wenn das selbstbestimmte Leben zum Tod führt</h2>
+                        <p>Von Drohungen und häuslicher Gewalt bis hin zum Mord durch Messerstiche, Ertränken oder Steinigen — ein Ehrenmord hat viele Facetten, doch das Motiv bleibt gleich. Eine Frau muss sterben, weil sie dem Ansehen ihrer Familie vermeintlich geschadet hat. In dieser Facharbeit beschäftigten wir unsmit dem Phänomen Ehrenmord und spezialisierten uns dabei auf die Ermordung Hatun Sürücüs, die 2005 einem Ehrenmord zum Opfer fiel. Wir erklären, wieso es sich nicht nur um einen einfachen Mord handelt und stellen die Komplexität, die mit diesem Phänomen einhergeht, anhand des oben genannten Falls dar.</p>
+                        <p class="authors">Lisa Hauk, Rojin Kalgak</p>
+                    </span>
+                </div>
+
+                <div id="project11" class="tr">
+                    <img src="../images/Gruppenfotos/small/Holly Marie Frankham, Jasmin Lambrü, Alina Moor.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Sterbehilfe - Der Tod in deinen Händen</h2>
+                        <p>Was würdest du tun, wenn du den Zeitpunkt deines Todes selber bestimmen könntest? Unsere Facharbeit über die Sterbehilfe hat sich mit genau dem Thema beschäftigt. Durch diese kann man den kontrollierten Tod fördern und das Leiden eines Patienten minimieren. Zwar findet sie zunehmend rechtliche Akzeptanz, ist heutzutage aber trotzdem moralisch noch sehr umstritten. Wir möchten euch mithilfe von zwei Ländern, welche grundlegend unterschiedliche Perspektiven besitzen, ein allgemeines Verständnis für die Sterbehilfeformen schaffen und ihre Grenzen erforschen. Denn diese wird in der Zukunft eine stetig bedeutsamere Rolle in unserer modernen Gesellschaft einnehmen.</p>
+                        <p class="authors">Holly Marie Frankham, Jasmin Lambrü, Alina Moor</p>
+                    </span>
+                </div>
+                
+                <div id="project12" class="tl">
+                    <img src="../images/Gruppenfotos/small/Melvin Beckmann, Jamila Loggia, Jonah Wehr.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Gendoping - Das Ende des fairen Sports? </h2>
+                        <p>Mit der immer weiter voranschreiten medizinischen Entwicklung im Bereich der Gentherapien entsteht neben besseren Heilungschancen bei Krankheiten auch die Möglichkeit diese Verfahren zum steigern der eigenen Fähigkeiten zu nutzen. So können in Zukunft gentherapeutische Verfahren zum dopen im Leistungssport genutzt werden, dies wird dann als Gendoping bezeichnet.</p>
+                        <p class="authors">Melvin Beckmann, Jamila Loggia, Jonah Wehr</p>
+                    </span>
+                </div>
+
+                <div id="project13" class="tr">
+                    <img src="../images/bild1.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Body Positivity</h2>
+                        <p>Folgt noch.</p>
+                        <p class="authors">Lino Alessio Kauschinger, Tara Chiara Kauschinger</p>
+                    </span>
+                </div>
+
+                <div id="project14" class="tl">
+                    <img src="../images/Gruppenfotos/small/David Gorin, Sarah Stöcker, Mailin Münchow, Ole Fendler.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Social Media</h2>
+                        <p>Wir haben uns die Frage gestellt welche Auswirkungen Social Media auf die Intelligenzentwicklung und das Soziale Leben Jugendlicher hat und welche Maßnahmen getroffen werden können um diese vorzubeugen oder herbeizuführen.</p>
+                        <p class="authors">David Gorin, Sarah Stöcker, Mailin Münchow, Ole Fendler</p>
+                    </span>
+                </div>
+
+                <div id="project15" class="tr">
+                    <img src="../images/Gruppenfotos/small/Finn Lewin Bakemeier, Lasse Adam.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Holz - Rohstoff der Zukunft</h2>
+                        <p>Folgt noch.</p>
+                        <p class="authors">Finn Lewin Bakemeier, Lasse Adam</p>
+                    </span>
+                </div>
+                
+                <div id="project16" class="tl">
+                    <img src="../images/bild1.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Anerkennung der Frau</h2>
+                        <p>„Die Emanzipation der Frau“ eine heutzutage oft verwendete Aussage, welche für die Eigenständigkeit von Frauen und deren Befreiung von Gesellschaftlichen Pflichten steht. Das Ziel dieser stellt die Gleichberechtigung aller dar, doch ob diese zwischen  Männer und Frauen im 21. Jahrhundert besteht ist eine umstrittene Frage, mit welcher wir uns in dieser Facharbeit beschäftigen.</p>
+                        <p class="authors">Lea Thielmann, Charlotte Porath</p>
+                    </span>
+                </div>
+
+                <div id="project17" class="tr">
+                    <img src="../images/Gruppenfotos/small/Anna Clara Heine, Alina Jordan, Jahn-Micha Häußler.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Schönheitsideale und dessen Einflüsse auf Jugendliche </h2>
+                        <p>Der Mensch ist ein soziales Wesen und ständig im Austausch mit seinen Mitmenschen. Doch was wenn Schönheitsideale diesen Austausch zu stark beeinflussen und zur Gefahr werden.</p>
+                        <p class="authors">Anna Clara Heine, Alina Jordan, Jahn-Micha Häußler</p>
+                    </span>
+                </div>
+
+                <div id="project18" class="tl">
+                    <img src="../images/Gruppenfotos/small/Christoph Hiestermann, Finn-Hendrik Hohls, Mattis Withoeft, Finn-Lukas Ebeling.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Massentierhaltung und Klimaschutz - ein Widerspruch?</h2>
+                        <p>Der Klimawandel bewegt die Welt und die Massentierhaltung trägt seinen Teil dazu bei. Doch wie genau wirkt sie sich auf das Klima aus und gibt es klimafreundlichere Alternativen? Diese Fragestellung bildete den Schwerpunkt unserer Arbeit.</p>
+                        <p class="authors">Christoph Hiestermann, Finn Hendrik Hohls, Mattis Withoeft, Finn Lukas Ebeling</p>
+                    </span>
+                </div>
+
+                <div id="project19" class="tr">
+                    <img src="../images/Gruppenfotos/small/Belinda Obiri, Theda Backeberg, Lea Thiringer, Veronique Weber (n.a.).webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Musiktherapie</h2>
+                        <p>Menschen sind den Großteil ihres Lebens von akkustischen Einflüssen umgeben. Wie sich diese auf sie auswirken wird auf verschiedenste Weisen sichtbar. Ob gezielt eingesetzt oder wahllos wahrgenommen  ist hierbei nicht nur Nebensache. Wir fokussieren uns mit dem Thema Musiktherapie auf Musik und ihren Einfluss auf die menschliche Psyche hauptsächlich am Beispiel der Krankheiten Demenz und Depression.</p>
+                        <p class="authors">Belinda Obiri, Theda Backeberg, Lea Thiringer, Veronique Weber (n.a.)</p>
+                    </span>
+                </div>
+
+                <div id="project20" class="tl">
+                    <img src="../images/Gruppenfotos/small/Benedikt Hertwig, Nadia Lange, Louis Lammert.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Social Media - Die zugänglichste Droge des 21. Jahrhunderts </h2>
+                        <p>Social Media begleitet uns ständig durch den Tag, TikTok und Instagram sind nur 2 Klicks entfernt. Doch wie Funktioniert das ganze, wie kann Social Media immer das anzeigen, was wir sehen wollen und welche Auswirkungen können solche Anwendungen auf das Individuum haben. In unserer Facharbeit haben wir uns mit diesen Fragen befasst. </p>
+                        <p class="authors">Benedikt Hertwig, Nadia Lange, Louis Lammert, (Tim Niederhäuser (n.a.), nicht am Stand beteiligt)</p>
+                    </span>
+                </div>
+
+                <div id="project21" class="tr">
+                    <img src="../images/Gruppenfotos/small/Jonah Schulz, Torge Michaelis.webp" width="1000" height="600">
+                    <span class="project-description">
+                        <h2>Deutsch - Ein MIschmasch aller Welten</h2>
+                        <p>Deutsch - eine Sprache,die die Muttersprache von ca.130 Millionen Menschen weltweit ist. Aber doch sprechen nicht alle das geliche Deutsch. Das Jugendwort des Jahres 2023 "Goofy" ist vielen Muttersprachlern ein Begriff. Aber woran liegt das? Kurzgesagt: Einflüsse anderer Sprachen! An unserem Stand auf der Facharbeitsmesse wollen wir diese Frage ausführlicher beantworten.</p>
+                        <p class="authors">Jonah Schulz, Torge Michaelis</p>
+                    </span>
+                </div>
+
+        </section>
+        
+        <section class="footer">
+            <p id="contact">Mail-Kontakt: <a href="mailto:pressegruppe@gyher.de">pressegruppe@gyher.de</a> <a href="../contact/">Impressum</a></p>
+            <p id="written-by">Written by Timo</p>
+        </section>
+
+    </div>
+</body>
+</html>
+
