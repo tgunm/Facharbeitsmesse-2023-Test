@@ -238,6 +238,7 @@ h1, h2, h3 {
         height: 76px;
         width: auto;
         border-radius: 9px;
+        background-color: var(--main-color);
     }
 
     .sidebar {
